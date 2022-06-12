@@ -7,9 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+/*
+ 
+ Will be covering all the basic concepts of swift programming language in this project.
+1. Swift DataTypes and Operators
+ 
+ */
 
-
-
-//var swiftLoopsObj = SwiftLoops()
-//swiftLoopsObj.looping()
