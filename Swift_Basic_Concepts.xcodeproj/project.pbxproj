@@ -10,12 +10,24 @@
 		AE3BCCC728563C3F005919D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BCCC628563C3F005919D2 /* main.swift */; };
 		AE3BCCCB28563D13005919D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BCCC628563C3F005919D2 /* main.swift */; };
 		AE3BCCCC28563D14005919D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BCCC628563C3F005919D2 /* main.swift */; };
+		AE9A390328579545003A843B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A390228579545003A843B /* main.swift */; };
+		AE9A390728579590003A843B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A390228579545003A843B /* main.swift */; };
+		AE9A390928579591003A843B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A390228579545003A843B /* main.swift */; };
 		AECA3E00284BBCCE00EEF7E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA3DFF284BBCCE00EEF7E4 /* main.swift */; };
 		AECA3E13284BC34C00EEF7E4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AECA3DFF284BBCCE00EEF7E4 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		AE3BCCC228563C3F005919D2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AE9A38FE28579545003A843B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -47,6 +59,8 @@
 /* Begin PBXFileReference section */
 		AE3BCCC428563C3F005919D2 /* SwiftDataTypesAndOperators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDataTypesAndOperators; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3BCCC628563C3F005919D2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		AE9A390028579545003A843B /* SwiftControlFlow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftControlFlow; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9A390228579545003A843B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AECA3DFC284BBCCE00EEF7E4 /* Swift_Basic_Concepts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Basic_Concepts; sourceTree = BUILT_PRODUCTS_DIR; };
 		AECA3DFF284BBCCE00EEF7E4 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AECA3E0C284BC08000EEF7E4 /* Swift_Loops */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Swift_Loops; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +68,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		AE3BCCC128563C3F005919D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9A38FD28579545003A843B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -85,11 +106,20 @@
 			path = SwiftDataTypesAndOperators;
 			sourceTree = "<group>";
 		};
+		AE9A390128579545003A843B /* SwiftControlFlow */ = {
+			isa = PBXGroup;
+			children = (
+				AE9A390228579545003A843B /* main.swift */,
+			);
+			path = SwiftControlFlow;
+			sourceTree = "<group>";
+		};
 		AECA3DF3284BBCCE00EEF7E4 = {
 			isa = PBXGroup;
 			children = (
 				AECA3DFE284BBCCE00EEF7E4 /* Swift_Basic_Concepts */,
 				AE3BCCC528563C3F005919D2 /* SwiftDataTypesAndOperators */,
+				AE9A390128579545003A843B /* SwiftControlFlow */,
 				AECA3DFD284BBCCE00EEF7E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +130,7 @@
 				AECA3DFC284BBCCE00EEF7E4 /* Swift_Basic_Concepts */,
 				AECA3E0C284BC08000EEF7E4 /* Swift_Loops */,
 				AE3BCCC428563C3F005919D2 /* SwiftDataTypesAndOperators */,
+				AE9A390028579545003A843B /* SwiftControlFlow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,6 +161,23 @@
 			name = SwiftDataTypesAndOperators;
 			productName = SwiftDataTypesAndOperators;
 			productReference = AE3BCCC428563C3F005919D2 /* SwiftDataTypesAndOperators */;
+			productType = "com.apple.product-type.tool";
+		};
+		AE9A38FF28579545003A843B /* SwiftControlFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9A390628579545003A843B /* Build configuration list for PBXNativeTarget "SwiftControlFlow" */;
+			buildPhases = (
+				AE9A38FC28579545003A843B /* Sources */,
+				AE9A38FD28579545003A843B /* Frameworks */,
+				AE9A38FE28579545003A843B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftControlFlow;
+			productName = SwiftControlFlow;
+			productReference = AE9A390028579545003A843B /* SwiftControlFlow */;
 			productType = "com.apple.product-type.tool";
 		};
 		AECA3DFB284BBCCE00EEF7E4 /* Swift_Basic_Concepts */ = {
@@ -179,6 +227,9 @@
 					AE3BCCC328563C3F005919D2 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
+					AE9A38FF28579545003A843B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					AECA3DFB284BBCCE00EEF7E4 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -203,6 +254,7 @@
 				AECA3DFB284BBCCE00EEF7E4 /* Swift_Basic_Concepts */,
 				AECA3E0B284BC08000EEF7E4 /* Swift_Loops */,
 				AE3BCCC328563C3F005919D2 /* SwiftDataTypesAndOperators */,
+				AE9A38FF28579545003A843B /* SwiftControlFlow */,
 			);
 		};
 /* End PBXProject section */
@@ -212,7 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE9A390928579591003A843B /* main.swift in Sources */,
 				AE3BCCC728563C3F005919D2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9A38FC28579545003A843B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9A390328579545003A843B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +283,7 @@
 			files = (
 				AE3BCCCC28563D14005919D2 /* main.swift in Sources */,
 				AECA3E00284BBCCE00EEF7E4 /* main.swift in Sources */,
+				AE9A390728579590003A843B /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +312,30 @@
 			name = Debug;
 		};
 		AE3BCCC928563C3F005919D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUV5H3HU85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		AE9A390428579545003A843B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUV5H3HU85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE9A390528579545003A843B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -426,6 +512,15 @@
 			buildConfigurations = (
 				AE3BCCC828563C3F005919D2 /* Debug */,
 				AE3BCCC928563C3F005919D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9A390628579545003A843B /* Build configuration list for PBXNativeTarget "SwiftControlFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9A390428579545003A843B /* Debug */,
+				AE9A390528579545003A843B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
