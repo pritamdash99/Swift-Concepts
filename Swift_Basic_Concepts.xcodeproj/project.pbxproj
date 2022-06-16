@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE2F6675285B994900BC905D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2F6674285B994900BC905D /* main.swift */; };
 		AE3BCCC728563C3F005919D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BCCC628563C3F005919D2 /* main.swift */; };
 		AE3BCCCB28563D13005919D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BCCC628563C3F005919D2 /* main.swift */; };
 		AE3BCCCC28563D14005919D2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3BCCC628563C3F005919D2 /* main.swift */; };
@@ -18,6 +19,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		AE2F6670285B994900BC905D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		AE3BCCC228563C3F005919D2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +67,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE2F6672285B994900BC905D /* OptionalTypes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OptionalTypes; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2F6674285B994900BC905D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AE3BCCC428563C3F005919D2 /* SwiftDataTypesAndOperators */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftDataTypesAndOperators; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3BCCC628563C3F005919D2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AE9A390028579545003A843B /* SwiftControlFlow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftControlFlow; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AE2F666F285B994900BC905D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE3BCCC128563C3F005919D2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -98,6 +117,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE2F6673285B994900BC905D /* OptionalTypes */ = {
+			isa = PBXGroup;
+			children = (
+				AE2F6674285B994900BC905D /* main.swift */,
+			);
+			path = OptionalTypes;
+			sourceTree = "<group>";
+		};
 		AE3BCCC528563C3F005919D2 /* SwiftDataTypesAndOperators */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +147,7 @@
 				AECA3DFE284BBCCE00EEF7E4 /* Swift_Basic_Concepts */,
 				AE3BCCC528563C3F005919D2 /* SwiftDataTypesAndOperators */,
 				AE9A390128579545003A843B /* SwiftControlFlow */,
+				AE2F6673285B994900BC905D /* OptionalTypes */,
 				AECA3DFD284BBCCE00EEF7E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +159,7 @@
 				AECA3E0C284BC08000EEF7E4 /* Swift_Loops */,
 				AE3BCCC428563C3F005919D2 /* SwiftDataTypesAndOperators */,
 				AE9A390028579545003A843B /* SwiftControlFlow */,
+				AE2F6672285B994900BC905D /* OptionalTypes */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +175,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AE2F6671285B994900BC905D /* OptionalTypes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE2F6678285B994900BC905D /* Build configuration list for PBXNativeTarget "OptionalTypes" */;
+			buildPhases = (
+				AE2F666E285B994900BC905D /* Sources */,
+				AE2F666F285B994900BC905D /* Frameworks */,
+				AE2F6670285B994900BC905D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OptionalTypes;
+			productName = OptionalTypes;
+			productReference = AE2F6672285B994900BC905D /* OptionalTypes */;
+			productType = "com.apple.product-type.tool";
+		};
 		AE3BCCC328563C3F005919D2 /* SwiftDataTypesAndOperators */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE3BCCCA28563C3F005919D2 /* Build configuration list for PBXNativeTarget "SwiftDataTypesAndOperators" */;
@@ -224,6 +270,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					AE2F6671285B994900BC905D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					AE3BCCC328563C3F005919D2 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -255,11 +304,20 @@
 				AECA3E0B284BC08000EEF7E4 /* Swift_Loops */,
 				AE3BCCC328563C3F005919D2 /* SwiftDataTypesAndOperators */,
 				AE9A38FF28579545003A843B /* SwiftControlFlow */,
+				AE2F6671285B994900BC905D /* OptionalTypes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AE2F666E285B994900BC905D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE2F6675285B994900BC905D /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AE3BCCC028563C3F005919D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -299,6 +357,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		AE2F6676285B994900BC905D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUV5H3HU85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE2F6677285B994900BC905D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GUV5H3HU85;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		AE3BCCC828563C3F005919D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -507,6 +589,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AE2F6678285B994900BC905D /* Build configuration list for PBXNativeTarget "OptionalTypes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2F6676285B994900BC905D /* Debug */,
+				AE2F6677285B994900BC905D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		AE3BCCCA28563C3F005919D2 /* Build configuration list for PBXNativeTarget "SwiftDataTypesAndOperators" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
