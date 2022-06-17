@@ -12,4 +12,22 @@
  */
 import Foundation
 
-
+class Person {
+    var name : String
+    var job : Job?      //earlier this was present till line 128. //Only Added for example3
+    weak var job : Job?      //Only Added for example3
+    
+    init(_name : String)
+    {
+        name = _name
+        print("Init method for Person is called")   //Only Added for example3
+    }
+    
+    func printName() {
+        print("name is : ", name)
+    }
+    
+    deinit{
+        print("Deinit called for person class")
+    }
+}
