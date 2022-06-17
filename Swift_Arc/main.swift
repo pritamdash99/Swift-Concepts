@@ -14,7 +14,7 @@ import Foundation
 
 class Person {
     var name : String
-    var job : Job?      //earlier this was present till line 128. //Only Added for example3
+   // var job : Job?      //earlier this was present till line 128. //Only Added for example3
     weak var job : Job?      //Only Added for example3
     
     init(_name : String)
@@ -31,3 +31,16 @@ class Person {
         print("Deinit called for person class")
     }
 }
+//Example 1 :
+//if(1 == 1){   // this if condition forces swift to run ARC
+//    let objPerson = Person(_name: "codecat15")
+//    objPerson.printName()
+//}
+///*
+// O/p :
+// name is :  codecat15
+// Deinit called for person class
+//
+// Because the object is only being created and used inside the if statement. And whenever deint is called swift is 100% sure that the object is no longer in the memory.
+//
+// */
