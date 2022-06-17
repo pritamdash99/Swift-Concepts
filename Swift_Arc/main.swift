@@ -44,3 +44,33 @@ class Person {
 // Because the object is only being created and used inside the if statement. And whenever deint is called swift is 100% sure that the object is no longer in the memory.
 //
 // */
+
+//Example 2 :
+//var objPerson1 : Person?
+//var objPerson2 : Person?
+//
+//if(1==1)
+//{
+//    let objPerson = Person(_name: "codecat15")
+//    objPerson1 = objPerson
+//    objPerson2 = objPerson
+//    objPerson.printName()
+//}
+///*
+// O/p :
+// name is :  codecat15
+//
+// Because objPerson1 and objPerson2 are both declared before the if statement. So even after if statement there are 2 references which are using the objPerson.
+//
+// objPerson1?.printName() after the if statement is allowed.
+//
+// objPerson1 = nil , even after this statement the deint won't be called becuse still there is 1 object which is using objPerson.
+// */
+//objPerson1 = nil
+//objPerson2 = nil
+//
+///*
+// O/p :
+// name is :  codecat15
+// Deinit called for person class
+// */
