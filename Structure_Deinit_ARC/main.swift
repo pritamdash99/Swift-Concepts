@@ -122,4 +122,15 @@ struct Driver : Person2{
     var age: Int = 0
 }
 
+/* Outputs :
+ 101 567000.0
+ 453000.0 453000.0
+ Hello I'm going out from memory
+ nil
+ ========= Structure ======
+ 101 Pritam 56.7
+ 101 Pritam 56.7
+ 101 Pritam 78.2
+ 
+ */
 
