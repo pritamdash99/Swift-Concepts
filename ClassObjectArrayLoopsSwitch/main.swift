@@ -110,4 +110,35 @@ while true
         for p in patientArray {
             p.display()
         }
-     
+    case 5 : //display by gender
+        for i in 0...patientArray.count - 2
+        {
+            for j in (i+1)...patientArray.count - 1
+            {
+                if (patientArray[i].gender > patientArray[j].gender)
+                {
+                    var tempPatient = patientArray[i]
+                    patientArray[i] = patientArray[j]
+                    patientArray[j] = tempPatient
+                }
+            }
+        }
+        
+        for p in patientArray {
+            p.display()
+        }
+        
+    case 6 : // update fees by tokennumber
+        print("Enter token number to update Fee :")
+        let tNo = Int(readLine()!)!
+        
+        for i in 0...patientArray.count - 1
+        {
+            if(tNo == patientArray[i].tokenNo){
+                let patient = patientArray[i]
+                print("Enter the fee amount: ")
+                let f = Float(readLine()!)!
+                patient.fees = f
+                break
+            }
+        }
