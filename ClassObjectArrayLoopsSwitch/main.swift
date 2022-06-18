@@ -64,4 +64,27 @@ while true
     print("6. Update Patient fee")
     print("7. Exit Application")
     print("Select your choice : [1 - 7] ")
-}
+
+    var choice = Int(readLine()!)!
+    if(choice == 7)
+    {
+        break
+    }
+    switch choice {
+    case 1 :
+        var p = Patient()
+        p.inputData()
+        p.setToken()
+        patientArray.append(p)
+    
+    case 2 :
+        print("Enter token number to remove :")
+        let tNo = Int(readLine()!)!
+        
+        for i in 0...patientArray.count - 1
+        {
+            if(tNo == patientArray[i].tokenNo){
+                patientArray.remove(at: i)
+                break
+            }
+        }
