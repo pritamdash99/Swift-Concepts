@@ -142,3 +142,9 @@ while true
                 break
             }
         }
+    default :
+        print("Invalid choice, please select again.")
+        
+    }//end of switch
+
+} // end of while loop
