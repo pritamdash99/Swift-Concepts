@@ -148,3 +148,149 @@ while true
     }//end of switch
 
 } // end of while loop
+
+/*
+ Output :
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 1
+ Enter patient name :
+ Pritam Dash
+ Enter patient age :
+ 23
+ Enter patient gender :
+ M
+ Enter patient fees :
+ 300
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 1
+ Enter patient name :
+ Priya
+ Enter patient age :
+ 20
+ Enter patient gender :
+ F
+ Enter patient fees :
+ 500
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 1
+ Enter patient name :
+ Raj
+ Enter patient age :
+ 40
+ Enter patient gender :
+ M
+ Enter patient fees :
+ 120
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 1
+ Enter patient name :
+ Rahul Dua
+ Enter patient age :
+ 35
+ Enter patient gender :
+ M
+ Enter patient fees :
+ 560
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 3
+ Token Number - 1, Name - Pritam Dash, Age - 23, Gender -M, Fees - 300.0
+ Token Number - 2, Name - Priya, Age - 20, Gender -F, Fees - 500.0
+ Token Number - 3, Name - Raj, Age - 40, Gender -M, Fees - 120.0
+ Token Number - 4, Name - Rahul Dua, Age - 35, Gender -M, Fees - 560.0
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 4
+ Token Number - 2, Name - Priya, Age - 20, Gender -F, Fees - 500.0
+ Token Number - 1, Name - Pritam Dash, Age - 23, Gender -M, Fees - 300.0
+ Token Number - 4, Name - Rahul Dua, Age - 35, Gender -M, Fees - 560.0
+ Token Number - 3, Name - Raj, Age - 40, Gender -M, Fees - 120.0
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 5
+ Token Number - 2, Name - Priya, Age - 20, Gender -F, Fees - 500.0
+ Token Number - 1, Name - Pritam Dash, Age - 23, Gender -M, Fees - 300.0
+ Token Number - 4, Name - Rahul Dua, Age - 35, Gender -M, Fees - 560.0
+ Token Number - 3, Name - Raj, Age - 40, Gender -M, Fees - 120.0
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 6
+ Enter token number to update Fee :
+ 2
+ Enter the fee amount:
+ 580
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 3
+ Token Number - 2, Name - Priya, Age - 20, Gender -F, Fees - 580.0
+ Token Number - 1, Name - Pritam Dash, Age - 23, Gender -M, Fees - 300.0
+ Token Number - 4, Name - Rahul Dua, Age - 35, Gender -M, Fees - 560.0
+ Token Number - 3, Name - Raj, Age - 40, Gender -M, Fees - 120.0
+ 1. Enter new patient detail
+ 2. Remove patient by token number
+ 3. Display all patients
+ 4. Display patient order by age
+ 5. Display patient order by gender
+ 6. Update Patient fee
+ 7. Exit Application
+ Select your choice : [1 - 7]
+ 7
+ */
