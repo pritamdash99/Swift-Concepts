@@ -88,3 +88,26 @@ while true
                 break
             }
         }
+    case 3 :
+        for p in patientArray {
+            p.display()
+        }
+        
+    case 4 : //display by age
+        for i in 0...patientArray.count - 2
+        {
+            for j in (i+1)...patientArray.count - 1
+            {
+                if (patientArray[i].age > patientArray[j].age)
+                {
+                    var tempPatient = patientArray[i]
+                    patientArray[i] = patientArray[j]
+                    patientArray[j] = tempPatient
+                }
+            }
+        }
+        
+        for p in patientArray {
+            p.display()
+        }
+     
