@@ -53,4 +53,15 @@ class Patient {
         self.tokenNo = Patient.tokenCounter
     }
 }
-
+var patientArray : [Patient] = []
+while true
+{
+    print("1. Enter new patient detail")        //Create object of patient class and append in patientArray
+    print("2. Remove patient by token number")
+    print("3. Display all patients")
+    print("4. Display patient order by age")
+    print("5. Display patient order by gender")
+    print("6. Update Patient fee")
+    print("7. Exit Application")
+    print("Select your choice : [1 - 7] ")
+}
