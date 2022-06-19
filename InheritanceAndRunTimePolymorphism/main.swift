@@ -22,3 +22,14 @@ class OneBHK {
     }
 }
 
+//Difference between 1bhk and 2 bhk ais just 1 more room. SO Inheriting 1bhk we can create 2 bhk
+
+class TwoBHK : OneBHK {
+    var secondRoom : Float = 0
+    override func display() {
+        print("Two BHK : ", room,hall,kitchen,secondRoom)
+    }
+    override func getArea() -> Float {
+        return super.getArea() + secondRoom
+    }
+}
