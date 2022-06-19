@@ -73,3 +73,46 @@ s1.display()
 
 s1.displayData()
 // O/p : Student - 1101 Rohan 22
+
+// Heriarical Inheritance
+
+class Teacher : Person {
+    var subject : String = ""
+    override init()     //Super class has default init so have to put override
+    {
+        super.init()
+        age = 18
+        print("I am Teacher default init")
+    }
+    //Superclass doesnot have parameterised init so no need for override
+    init(name:String, age : Int, subject : String) {
+        super.init()    // default init of superclass
+        self.name = name
+        self.age = age
+        self.subject = subject
+        print("I am Teacher paramaterised init")
+    }
+    
+    override func display() {
+        print("I'm a Teacher---")
+        //print(name, age, subject) - O/p :  Rohan 44 Maths
+        //As name and age are being printed in the superclass no need to call a new print for them.
+        super.display() //reusing the superclass function.
+        print(subject)
+    }
+    
+}
+print("---------")
+let t1 = Teacher()
+t1.name = "Rohan"
+t1.subject = "Maths"
+t1.age = 44
+t1.display()
+/*
+ O/p :
+ I am Person default init
+ I am Teacher default init
+ I'm a Teacher---
+ Rohan 44
+ Maths
+ */
