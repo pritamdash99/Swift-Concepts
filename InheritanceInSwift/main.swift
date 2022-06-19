@@ -17,3 +17,26 @@ import Foundation
  4. Hybrid : Mix any of the above type.
 */
 
+class Person {
+    var name :String = ""
+    var age : Int = 0
+    
+    init() {
+        print("I am Person default init")
+        age = 1
+    }
+    func display() -> Void {
+        print(name, age)
+    }
+}
+
+let p1 = Person()
+p1.name = "Pritam"
+p1.age = 33
+p1.display()
+/*
+ O/p :
+ I am Person default init
+ Pritam 33
+*/
+
