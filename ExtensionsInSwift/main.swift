@@ -47,3 +47,13 @@ print(p1.isVoter())
  Nishan 22
  true
  */
+
+var p2 = Person()
+p2.name = "Ankit"
+p2.age = 13;
+p2.display()
+print(p2.isVoter())
+/*
+ Ankit 13
+ false
+ */
