@@ -76,3 +76,28 @@ p2.process()
 var x : Int  = 4567
 var m : Float = 41.56
 var str : String = "Welcome"
+
+//how do you find the number of digits off an int ?
+
+/*
+ earlier global functoion.
+ func countDigits(i : Int) -> Int {
+     var str = String(i)
+     return str.count
+ }
+ 
+ */
+//print(countDigits(i: x)) // 4
+
+//what we wish to do is access a similar countDigit function but directly from original Int class. So that any int variable can access that function.
+
+extension Int {
+    func countDigits() -> Int {
+        var str = String(self)
+        return str.count
+    }
+    //This way we can also create needed functions using the original data type structs.
+    
+}
+
+print(x.countDigits())  // 4
