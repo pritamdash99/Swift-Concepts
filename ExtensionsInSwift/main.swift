@@ -9,3 +9,16 @@ import Foundation
 
 //Extension is a part of existing class, structure or enum to add new code(variables, functions, initializers) in a seperate declaration. i.e new features can be added to existing class, structure, enum without modifying the actual source code.
 
+class Person {
+    var name : String  = ""
+    var age : Int = 0
+    
+    func display() {
+        print(name, age)
+    }
+}
+
+var p1 = Person()
+p1.name = "Nishan"
+p1.age = 22
+p1.display()
