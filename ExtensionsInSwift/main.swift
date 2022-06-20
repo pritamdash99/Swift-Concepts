@@ -22,3 +22,28 @@ var p1 = Person()
 p1.name = "Nishan"
 p1.age = 22
 p1.display()
+
+extension Person : Processing{
+   
+    //new variables and initialers are called computed properties.
+    func isVoter() -> Bool {
+        if( age >= 18)
+        {
+            return true
+        }
+        else{
+            return false
+            
+        }
+    }
+    func process() {
+        print("Processing done.")
+    }
+    
+}
+
+print(p1.isVoter())
+/*
+ Nishan 22
+ true
+ */
