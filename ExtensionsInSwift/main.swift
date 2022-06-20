@@ -57,3 +57,22 @@ print(p2.isVoter())
  Ankit 13
  false
  */
+
+//If you want you can also inherit a protocol for the extension.
+
+protocol Processing {
+    func process()
+}
+p1.process()
+p2.process()
+/*
+ Processing done.
+ Processing done.
+ */
+
+//Extensions for the existing data types
+//The basic data types all are of type struct. So the concept of pass by value comes to place, hence copies get generated again and again as variables get assigned different variables.
+//Some times we need to change the behavior of these data types
+var x : Int  = 4567
+var m : Float = 41.56
+var str : String = "Welcome"
